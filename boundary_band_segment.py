@@ -17,7 +17,7 @@ def UpdateTrackbar(dummy=None):
 
 def process_image(img):
     h, w = img.shape[:2]
-    init_row, end_row = h*11/20, w*15/20
+    init_row, end_row = h*21/40, h*25/40
     ret_img = img[init_row:end_row, :, :]
     h, w = ret_img.shape[:2]
     if seed_pt is None:
